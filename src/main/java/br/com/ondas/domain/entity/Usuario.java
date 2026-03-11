@@ -44,5 +44,51 @@ public class Usuario {
         return this.tipoPerfil == PerfilTipo.PROFESSOR;
     }
 
-    // Getters omitidos por brevidade (id, nome, email, cpf, especialidade, tipoPerfil, gatewayCustomerId)
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    public String getEspecialidade() {
+        return especialidade;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    public PerfilTipo getTipoPerfil() {
+        return tipoPerfil;
+    }
+
+    public void setTipoPerfil(PerfilTipo tipoPerfil) {
+        this.tipoPerfil = tipoPerfil;
+    }
+
+    public String getGatewayCustomerId() {
+        return gatewayCustomerId;
+    }
+
+    public void setGatewayCustomerId(String gatewayCustomerId) {
+        this.gatewayCustomerId = gatewayCustomerId;
+    }
 }
