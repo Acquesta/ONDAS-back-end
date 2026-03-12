@@ -1,0 +1,39 @@
+### Criar Usuário
+POST http://localhost:8080/api/v1/usuarios
+Content-Type: application/json
+
+{
+    "nome": "João Silva",
+    "email": "joao@example.com",
+    "cpf": "123.456.789-00",
+    "perfil": "ALUNO"
+}
+
+###
+
+### Solicitar URL de Upload (Video Treino)
+POST http://localhost:8080/api/v1/treinos/upload-url?nomeArquivo=meu_treino_costas.mp4
+Content-Type: application/json
+
+###
+
+### Iniciar Treino (Gerar Histórico)
+POST http://localhost:8080/api/v1/historico/iniciar
+Content-Type: application/json
+
+{
+    "usuarioId": "uuid-do-usuario-aqui",
+    "treinoId": "uuid-do-treino-aqui"
+}
+
+###
+
+### Webhook AbacatePay (Pagamento Aprovado)
+POST http://localhost:8080/api/v1/assinaturas/webhook/abacatepay
+Content-Type: application/json
+
+{
+    "usuarioId": "uuid-do-usuario-aqui",
+    "status": "PAID",
+    "transactionId": "txn_abacate_12345"
+}
